@@ -1,0 +1,14 @@
+
+section#example {
+	height: 100vh;
+	padding-top: 200px;
+}
+.box {
+	height: 100px;
+	border: 2px solid #000;
+}
+.element {
+	height: 50px;
+	background-color: green;
+	margin-top: 25px;
+}
