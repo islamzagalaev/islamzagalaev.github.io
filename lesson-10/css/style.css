@@ -1,4 +1,6 @@
-
+body {
+	margin-top: 20px;
+}
 section#example {
 	height: 100vh;
 	padding-top: 200px;
