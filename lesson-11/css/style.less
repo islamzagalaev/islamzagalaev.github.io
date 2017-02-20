@@ -1,0 +1,168 @@
+/* Base fonts */
+.opn-reg {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.opn-bold {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+/* Base colors */
+@base-black: #706b73;
+@base-red: #fc7254;
+@white: #fff;
+@bg-grey: #f5f5f5;
+@base-text: #626262;
+@base-btn: #ff5c36;
+
+body {
+	font-size: 14px;
+	.opn-reg;
+	color: @base-text;
+}
+input, button, textarea {
+		&:focus {
+		outline: none;
+	}
+}
+#main {
+	background-color: @bg-grey;
+	min-height: 700px;
+	height: 100vh;
+}
+.main {
+	&-text {
+		margin-top: 10%;
+		text-align: center;
+		h1 {
+			font-size: 50px;
+			.opn-bold;
+			span {
+				color: @base-red;
+			}
+		}
+		p {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+	/* Form */
+	&-form {
+		margin-top: 30%;
+		padding: 35px;
+		background-color: @white;
+		-webkit-box-shadow: 0px 0px 57px 0px rgba(20,20,21,0.2);
+		box-shadow: 0px 0px 57px 0px rgba(20,20,21,0.2);
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		border-radius: 2px;
+		&-header {
+			text-align: center;
+			font-size: 20px;
+			.opn-bold;
+			span {
+				color: @base-red;
+			}
+		}
+		/* Button to send form massage */
+		&-btn {
+			background-color: @base-btn;
+			border: none;
+			padding: 15px 35px;
+			color: @white;
+			display: block;
+			margin: 0 auto;
+			margin-top: 30px;
+			font-size: 16px;
+			-webkit-box-shadow: 0px 11px 20px 0px rgba(20,20,21,0.12);
+			box-shadow: 0px 11px 20px 0px rgba(20,20,21,0.12);
+			-webkit-border-radius: 55px;
+			-moz-border-radius: 55px;
+			-ms-border-radius: 55px;
+			-o-border-radius: 55px;
+			border-radius: 55px;
+		}
+		input, textarea {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid @base-black;
+			margin-top: 30px;
+			font-size: 15px;
+		}
+	}
+}
+.main-logo-border {
+	border: 3px solid @base-black;
+	width: 155px;
+	height: 55px;
+	text-align: center;
+	line-height: 49px;
+}
+.main-head {
+	margin-top: 5%;
+}
+.main-logo-border p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 35px;
+	color: @base-black;
+}
+.main-logo-border p span {
+	color: lighten(@base-red, 5%);
+}
+.main-nav {
+	text-align: center;
+}
+.nav-bar {
+	width: 30px;
+	position: relative;
+	float: right;
+	height: 55px;
+}
+/* Nav btn */
+.line {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background-color: @base-black;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	&:before, &:after {
+		content: '';
+		width: 30px;
+		height: 4px;
+		background-color: @base-black;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+	}
+	&:before {
+		-webkit-transform: translateY(-8px);
+		-ms-transform: translateY(-8px);
+		-o-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+	&:after {
+		-webkit-transform: translateY(4px);
+		-ms-transform: translateY(4px);
+		-o-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+}
