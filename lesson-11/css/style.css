@@ -40,7 +40,7 @@ section {
 }
 /* Main block*/
 #main {
-  background: #f5f5f5 url(../png/mainbg.png) no-repeat center center;
+  background: #f5f5f5 url(../img/mainbg.png) no-repeat center center;
   background-size: cover;
   min-height: 700px;
   height: 100vh;
@@ -95,13 +95,18 @@ section {
   margin: 0 auto;
   margin-top: 30px;
   font-size: 16px;
-  -webkit-box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.12);
-  box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.12);
   -webkit-border-radius: 55px;
   -moz-border-radius: 55px;
   -ms-border-radius: 55px;
   -o-border-radius: 55px;
   border-radius: 55px;
+}
+.main-form-btn:hover {
+  -webkit-box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.12);
+  box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.12);
+}
+.main-form-btn .sign-right {
+  font-size: 22px;
 }
 .main-form input,
 .main-form textarea {
@@ -195,6 +200,9 @@ section {
 .process-box i.fa {
   font-size: 50px;
 }
+.process-box:hover {
+  box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+}
 .process-box h4 {
   margin-top: 25px;
   font-family: 'Open Sans', sans-serif;
@@ -223,6 +231,9 @@ section {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+}
+.process-btn:hover {
+  box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.25);
 }
 .btn-plus {
   width: 16px;
@@ -261,4 +272,57 @@ i.fa-camera-retro {
   -ms-transform: rotate(-17deg);
   -o-transform: rotate(-17deg);
   transform: rotate(-17deg);
+}
+/* Works block */
+#works {
+  background-color: #f5f5f5;
+  padding-bottom: 10%;
+}
+#works .section-header {
+  margin-top: 10%;
+}
+.works-box {
+  height: 360px;
+  position: relative;
+}
+.signature {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.signature:hover {
+  opacity: 1;
+}
+.sign p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.sign button {
+  border: none;
+  padding: 15px 35px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #fc7254;
+}
+.works-row {
+  margin-top: 3%;
 }

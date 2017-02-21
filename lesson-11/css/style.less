@@ -48,7 +48,7 @@ section {
 }
 /* Main block*/
 #main {
-	background: @bg-grey url(../png/mainbg.png) no-repeat center center;
+	background: @bg-grey url(../img/mainbg.png) no-repeat center center;
 	background-size: cover;
 	min-height: 700px;
 	height: 100vh;
@@ -99,13 +99,18 @@ section {
 			margin: 0 auto;
 			margin-top: 30px;
 			font-size: 16px;
-			-webkit-box-shadow: 0px 11px 20px 0px rgba(20,20,21,0.12);
-			box-shadow: 0px 11px 20px 0px rgba(20,20,21,0.12);
 			-webkit-border-radius: 55px;
 			-moz-border-radius: 55px;
 			-ms-border-radius: 55px;
 			-o-border-radius: 55px;
 			border-radius: 55px;
+			&:hover {
+			-webkit-box-shadow: 0px 11px 20px 0px rgba(20,20,21,0.12);
+			box-shadow: 0px 11px 20px 0px rgba(20,20,21,0.12);
+			}
+			.sign-right {
+				font-size: 22px;
+			}
 		}
 		input, textarea {
 			width: 100%;
@@ -201,6 +206,9 @@ section {
 		i.fa {
 			font-size: 50px;
 		}
+		&:hover {
+			box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+		}
 		h4 {
 			margin-top: 25px;
 			.opn-bold;
@@ -229,6 +237,9 @@ section {
 		-ms-border-radius: 50px;
 		-o-border-radius: 50px;
 		border-radius: 50px;
+		&:hover {
+			box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.25);
+		}
 	}
 }
 .btn-plus {
@@ -270,4 +281,60 @@ i.fa-camera-retro {
 	-ms-transform: rotate(-17deg);
 	-o-transform: rotate(-17deg);
 	transform: rotate(-17deg);
+}
+
+/* Works block */
+
+#works {
+	background-color: @bg-grey;
+	padding-bottom: 10%;
+	.section-header {
+		margin-top: 10%;
+	}
+}
+.works-box {
+	height: 360px;
+	position: relative;
+}
+.signature {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.85);
+	color: @white;
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	&:hover {
+		opacity: 1;
+	}
+}
+.sign {
+	p {
+		.opn-bold;
+		font-size: 22px;
+	}
+	button {
+		border: none;
+		padding: 15px 35px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+		background-color: @base-red;
+	}
+}
+.works-row {
+	margin-top: 3%;
 }
