@@ -14,7 +14,11 @@
 @bg-grey: #f5f5f5;
 @base-text: #626262;
 @base-btn: #ff5c36;
-
+@bg-tomi: #4eb2f7;
+@bg-koimona: #c049f8;
+@bg-koire: #817eff;
+@bg-lara: #f74770;
+/* Base settings */
 body {
 	font-size: 14px;
 	.opn-reg;
@@ -25,8 +29,27 @@ input, button, textarea {
 		outline: none;
 	}
 }
+section {
+	margin-top: 12%;
+	margin-bottom: 13%;
+}
+.section-header {
+	margin-bottom: 10%;
+	h2 {
+		font-size: 50px;
+		.opn-bold;
+		span {
+			color: @base-red;
+		}
+	}
+	p {
+		font-size: 16px;
+	}
+}
+/* Main block*/
 #main {
-	background-color: @bg-grey;
+	background: @bg-grey url(../png/mainbg.png) no-repeat center center;
+	background-size: cover;
 	min-height: 700px;
 	height: 100vh;
 }
@@ -165,4 +188,86 @@ input, button, textarea {
 		-o-transform: translateY(4px);
 		transform: translateY(4px);
 	}
+}
+
+/* Process block*/
+
+.process {
+	&-box {
+		text-align: center;
+		padding: 35px;
+		padding-top: 50px;
+		color: @white;
+		i.fa {
+			font-size: 50px;
+		}
+		h4 {
+			margin-top: 25px;
+			.opn-bold;
+			font-size: 20px;
+		}
+		p {
+			margin-top: 25px;
+			font-size: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	&-btn {
+		position: absolute;
+		left: 50%;
+		margin-left: -40%;
+		bottom: -30px;
+		width: 80%;
+		padding: 15px;
+		background-color: @white;
+		border: none;
+		color: @base-black;
+		font-size: 16px;
+		box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+	}
+}
+.btn-plus {
+	width: 16px;
+	height: 2px;
+	margin-right: 5px;
+	display: inline-block;
+	background-color: @base-black;
+	vertical-align: middle;
+	&:before {
+		display: inline-block;
+		content:'';
+		width: 16px;
+		height: 2px;
+		background-color: @base-black;
+		position: absolute;
+		-webkit-transform: rotate(90deg) translateY(8px);
+		-ms-transform: rotate(90deg) translateY(8px);
+		-o-transform: rotate(90deg) translateY(8px);
+		transform: rotate(90deg) translateY(8px);
+	}
+}
+.box {
+	&-tomi {
+		background-color: @bg-tomi;
+	}
+	&-koimona {
+		background-color: @bg-koimona;
+	}
+	&-koire {
+		background-color: @bg-koire;
+	}
+	&-lara {
+		background-color: @bg-lara;
+	}
+}
+i.fa-camera-retro {
+	-webkit-transform: rotate(-17deg);
+	-ms-transform: rotate(-17deg);
+	-o-transform: rotate(-17deg);
+	transform: rotate(-17deg);
 }
