@@ -401,8 +401,8 @@ i.fa-camera-retro {
   transform: translatey(0);
 }
 .hovereffect:hover a.info {
-  -webkit-transition-delay: .2s;
-  transition-delay: .2s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
 }
 /* Services block */
 .service-list {
@@ -467,4 +467,85 @@ i.fa-camera-retro {
   -webkit-box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.22);
   box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.22);
   text-decoration: none;
+}
+/* Feedback Block */
+.feedback-box {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px;
+}
+.feedback-box p {
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.feedback-box span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.feedback-box i.fa-star {
+  color: #ffef3b;
+}
+.feedback-slider-arrows {
+  font-size: 18px;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 16px;
+  -webkit-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  -o-transform: translateY(-9px);
+  transform: translateY(-9px);
+  box-shadow: 0px 3px 14px 0px rgba(20, 20, 21, 0.28);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.feedback-slider-arrows:hover {
+  background-color: #fc7254;
+  color: #ffffff;
+  cursor: pointer;
+}
+.feedback-img {
+  margin-bottom: -64px;
+}
+.feedback-shadow {
+  padding: 10px;
+  padding-top: 64px;
+  box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09);
+}
+.slick-active {
+  outline: none;
+}
+.arrow-right {
+  right: 0;
+  padding-left: 20px;
+}
+.arrow-left {
+  left: 0;
+}
+.slick-dots li button:before {
+  width: 21px;
+  height: 7px;
+  color: transparent;
+  background-color: #adadad;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.slick-dots li.slick-active button:before {
+  color: transparent;
+  background-color: #fc7254;
+}
+.slick-dots {
+  bottom: -50px;
 }
