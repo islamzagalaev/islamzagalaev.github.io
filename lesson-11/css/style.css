@@ -283,6 +283,10 @@ i.fa-camera-retro {
 .works-box {
   height: 360px;
   position: relative;
+  margin-top: 3%;
+}
+.works-box img {
+  width: 100%;
 }
 .signature {
   opacity: 0;
@@ -323,7 +327,7 @@ i.fa-camera-retro {
   background-color: #fc7254;
 }
 .works-row {
-  margin-top: 3%;
+  margin-top: 1.5%;
 }
 .hovereffect {
   width: 100%;
@@ -757,8 +761,11 @@ Modal Window
   .section-header h2 {
     font-size: 26px;
   }
-  #process > container > row > div {
-    margin-botttom: 20px;
+  .process-box {
+    margin-top: 80px;
+  }
+  .works-row {
+    margin-top: 0%;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -771,8 +778,14 @@ Modal Window
   .section-header h2 {
     font-size: 32px;
   }
-  #process > container > row > div {
-    margin-botttom: 20px;
+  .process-box {
+    margin-top: 80px;
+  }
+  .works-row {
+    margin-top: 0%;
+  }
+  .works-box {
+    margin-top: 3%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -785,8 +798,11 @@ Modal Window
   .section-header h2 {
     font-size: 34px;
   }
-  #process > container > row > div {
-    margin-botttom: 20px;
+  .process-box {
+    margin-top: 80px;
+  }
+  .works-row {
+    margin-top: 0%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
