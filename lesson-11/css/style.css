@@ -680,8 +680,27 @@ Modal Window
   #process > .container > .row > div {
     margin-bottom: 80px;
   }
-  .works-row {
-    margin-top: 0%;
+  .works-box {
+    height: 100%;
+  }
+  .service-list {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .service-list-item {
+    display: inline-block;
+  }
+  .carousel-inner > .item > a > img,
+  .carousel-inner > .item > img,
+  .img-responsive,
+  .thumbnail a > img,
+  .thumbnail > img {
+    margin: auto;
+    margin-top: 25px;
+  }
+  .service-btn {
+    margin: auto;
+    margin-top: 25px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -697,11 +716,27 @@ Modal Window
   #process > .container > .row > div {
     margin-bottom: 80px;
   }
-  .works-row {
-    margin-top: 0%;
-  }
   .works-box {
-    margin-top: 3%;
+    height: 100%;
+  }
+  .service-list {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .service-list-item {
+    display: inline-block;
+  }
+  .carousel-inner > .item > a > img,
+  .carousel-inner > .item > img,
+  .img-responsive,
+  .thumbnail a > img,
+  .thumbnail > img {
+    margin: auto;
+    margin-top: 25px;
+  }
+  .service-btn {
+    margin: auto;
+    margin-top: 25px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -718,7 +753,29 @@ Modal Window
     margin-bottom: 80px;
   }
   .works-row {
-    margin-top: 0%;
+    margin-top: 3%;
+  }
+  .works-box {
+    height: 100%;
+  }
+  .service-list {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .service-list-item {
+    display: inline-block;
+  }
+  .carousel-inner > .item > a > img,
+  .carousel-inner > .item > img,
+  .img-responsive,
+  .thumbnail a > img,
+  .thumbnail > img {
+    margin: auto;
+    margin-top: 25px;
+  }
+  .service-btn {
+    margin: auto;
+    margin-top: 25px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -730,6 +787,24 @@ Modal Window
   }
   .section-header h2 {
     font-size: 40px;
+  }
+  .works-box {
+    height: 294px;
+  }
+  .service-list {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .service-list-item {
+    display: inline-block;
+  }
+  .carousel-inner > .item > a > img,
+  .carousel-inner > .item > img,
+  .img-responsive,
+  .thumbnail a > img,
+  .thumbnail > img {
+    margin: auto;
+    margin-top: 25px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {

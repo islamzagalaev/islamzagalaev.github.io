@@ -119,7 +119,7 @@
 				</div>
 			</div>
 			<div class="row wow slideInUp">
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/1.png" alt="Art one">
 						<div class="signature">
@@ -130,7 +130,7 @@
         				</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/2.png" alt="Art one">
 						<div class="signature">
@@ -141,7 +141,7 @@
         				</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/3.png" alt="Art one">
 						<div class="signature">
@@ -154,7 +154,7 @@
 				</div>
 			</div>
 			<div class="row works-row wow slideInUp">
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/4.png" alt="Art one">
 						<div class="signature">
@@ -165,7 +165,7 @@
         				</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/5.png" alt="Art one">
 						<div class="signature">
@@ -176,7 +176,7 @@
         				</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/6.png" alt="Art one">
 						<div class="signature">
@@ -189,7 +189,7 @@
 				</div>
 			</div>
 			<div class="row works-row wow slideInUp">
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/7.png" alt="Art one">
 						<div class="signature">
@@ -200,7 +200,7 @@
         				</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/8.png" alt="Art one">
 						<div class="signature">
@@ -211,7 +211,7 @@
         				</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="works-box">
 						<img class="img-responsive" src="img/9.png" alt="Art one">
 						<div class="signature">
@@ -251,7 +251,7 @@
 								<button class="service-btn"><span class="btn-plus"></span> &nbsp;&nbsp;&nbsp;Know More</button>
 							</div>
 							<div class="col lg-5">
-								<img class="img-responsive" src="img/services/info-1.png" alt="Часы">
+								<img class="img-responsive service-png" src="img/services/info-1.png" alt="Часы">
 							</div>
 						</div><!-- /row -->
 						<div role="tabpanel" id="global" class="row tab-pane fade">
@@ -262,7 +262,7 @@
 								<button class="service-btn"><span class="btn-plus"></span> &nbsp;&nbsp;&nbsp;Know More</button>
 							</div>
 							<div class="col lg-5">
-								<img class="img-responsive" src="img/services/info-2.png" alt="Часы">
+								<img class="img-responsive service-png" src="img/services/info-2.png" alt="Часы">
 							</div>
 						</div><!-- /row -->
 						<div role="tabpanel" id="web" class="row tab-pane fade">
@@ -273,7 +273,7 @@
 								<button class="service-btn"><span class="btn-plus"></span> &nbsp;&nbsp;&nbsp;Know More</button>
 							</div>
 							<div class="col lg-5">
-								<img class="img-responsive" src="img/services/info-3.png" alt="Часы">
+								<img class="img-responsive service-png" src="img/services/info-3.png" alt="Часы">
 							</div>
 						</div><!-- /row -->
 					</div>
@@ -524,7 +524,35 @@
   			arrows: true,
   			prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left">',
   			nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right">',
-  			dots: true
+  			dots: true,
+  			responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 800,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		    // You can unslick at a given breakpoint now by adding:
+		    // settings: "unslick"
+		    // instead of a settings object
+		  ]
 		  });
 		});
     </script>
