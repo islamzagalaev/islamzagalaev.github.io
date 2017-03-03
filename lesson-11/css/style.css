@@ -162,9 +162,15 @@ section {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
 }
 .line:before,
 .line:after {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   content: '';
   width: 30px;
   height: 4px;
@@ -189,6 +195,64 @@ section {
   -ms-transform: translateY(4px);
   -o-transform: translateY(4px);
   transform: translateY(4px);
+}
+.nav-bar:hover .line {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  height: 0;
+}
+.nav-bar:hover .line:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.nav-bar:hover .line:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Navigation */
+.overlay-nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.overlay-nav ul {
+  text-align: center;
+  list-style: none;
+  padding-top: 10%;
+  line-height: 2.5;
+}
+.overlay-nav ul li a {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.overlay-nav ul li a:hover {
+  text-decoration: none;
+  color: #fc7254;
+}
+.close-nav {
+  position: fixed;
+  font-size: 50px;
+  top: 5%;
+  right: 20%;
+  color: #ffffff;
+}
+.close-nav:hover {
+  cursor: pointer;
 }
 /* Process block*/
 .process-box {
