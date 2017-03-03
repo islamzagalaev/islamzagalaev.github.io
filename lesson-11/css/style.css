@@ -49,6 +49,7 @@ section {
   /* Form */
 }
 .main-text {
+  color: #ffffff;
   margin-top: 7%;
   text-align: center;
 }
@@ -117,7 +118,7 @@ section {
   font-size: 15px;
 }
 .main-logo-border {
-  border: 3px solid #706b73;
+  border: 3px solid #ffffff;
   width: 155px;
   height: 55px;
   text-align: center;
@@ -130,7 +131,7 @@ section {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 35px;
-  color: #706b73;
+  color: #ffffff;
 }
 .main-logo-border p span {
   color: #fc876d;
@@ -149,7 +150,7 @@ section {
   display: block;
   width: 30px;
   height: 4px;
-  background-color: #706b73;
+  background-color: #ffffff;
   position: absolute;
   right: 0;
   top: 50%;
@@ -174,7 +175,7 @@ section {
   content: '';
   width: 30px;
   height: 4px;
-  background-color: #706b73;
+  background-color: #ffffff;
   position: absolute;
   right: 0;
   top: 50%;
@@ -766,6 +767,32 @@ Modal Window
     margin: auto;
     margin-top: 25px;
   }
+  .video-container {
+    display: none;
+  }
+  .main {
+    /* Form */
+    /* Button to send form massage */
+  }
+  .main-text {
+    color: #706b73;
+  }
+  .main-btn {
+    color: #706b73;
+  }
+  .main-logo-border {
+    border: 3px solid #706b73;
+  }
+  .main-logo-border p {
+    color: #706b73;
+  }
+  .line {
+    background-color: #706b73;
+  }
+  .line:before,
+  .line:after {
+    background-color: #706b73;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .main-text h1 {
@@ -801,6 +828,32 @@ Modal Window
   .service-btn {
     margin: auto;
     margin-top: 25px;
+  }
+  .video-container {
+    display: none;
+  }
+  .main {
+    /* Form */
+    /* Button to send form massage */
+  }
+  .main-text {
+    color: #706b73;
+  }
+  .main-btn {
+    color: #706b73;
+  }
+  .main-logo-border {
+    border: 3px solid #706b73;
+  }
+  .main-logo-border p {
+    color: #706b73;
+  }
+  .line {
+    background-color: #706b73;
+  }
+  .line:before,
+  .line:after {
+    background-color: #706b73;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -840,6 +893,32 @@ Modal Window
   .service-btn {
     margin: auto;
     margin-top: 25px;
+  }
+  .video-container {
+    display: none;
+  }
+  .main {
+    /* Form */
+    /* Button to send form massage */
+  }
+  .main-text {
+    color: #706b73;
+  }
+  .main-btn {
+    color: #706b73;
+  }
+  .main-logo-border {
+    border: 3px solid #706b73;
+  }
+  .main-logo-border p {
+    color: #706b73;
+  }
+  .line {
+    background-color: #706b73;
+  }
+  .line:before,
+  .line:after {
+    background-color: #706b73;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -881,4 +960,52 @@ Modal Window
   .section-header h2 {
     font-size: 46px;
   }
+}
+/* Video Cover */
+header {
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+#layer-1 {
+  margin-left: 70%;
+  margin-top: 20%;
+}
+#layer-3 {
+  margin-top: -13%;
+  margin-left: 40%;
 }

@@ -24,6 +24,16 @@
   </head>
   <body>
     <header id="main">
+    	<div class="video-container">
+	        <div class="filter"></div>
+	        <video autoplay loop class="fillWidth">
+	        	<source src="video-bg/MP4/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	        	<source src="video-bg/WEBM/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	        </video>
+	        <div class="poster hidden">
+	        	<img src="video-bg/Snapshots/Love-Coding.jpg" alt="">
+	        </div>
+   		</div>
       <div class="container">
         <div class="row main-head">
           <div class="col-xs-6 main-logo">
@@ -339,6 +349,29 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Parallax -->
+
+	<section id="parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 section-header text-center">
+					<h2><span>Parallax</span> section</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur natus voluptates enim.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul id="scene">
+					  <li class="layer" id="layer-1" data-depth="3.20"><img src="img/parallax/1.png"></li>
+					  <li class="layer" id="layer-2" data-depth="1.80"><img src="img/parallax/2.png"></li>
+					  <li class="layer" id="layer-3" data-depth="5.10"><img src="img/parallax/3.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Feedback -->
 	<section id="feedback">
 		<div class="container">
@@ -604,6 +637,10 @@
     			}
     		})
     	})
+    </script>
+    <script src="js/jquery.parallax.js"></script>
+    <script>
+    	$('#scene').parallax();
     </script>
   </body>
 </html>
